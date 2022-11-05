@@ -4,7 +4,8 @@ const dDayFormDate = document.querySelector('.dDay-form__date');
 const dDayFormTitle = document.querySelector('.dDay-form__title');
 
 const today = koreaDate(new Date());
-dDayFormDate.value = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
+const todayFormat = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
+dDayFormDate.value = todayFormat;
 
 const DDAY_KEY = "dDay";
 let dDays = [];
@@ -81,7 +82,7 @@ function addBtnSubmit(event){
     dDays.push(newDdayObj);
     paintDday(newDdayObj);
     saveDdays();
-    dDayFormDate.value = "";
+    dDayFormDate.value = todayFormat;
     dDayFormTitle.value = "";
 }
 
