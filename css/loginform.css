@@ -1,0 +1,36 @@
+.login-form{
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form input,
+.login-form button{
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.login-form input {
+    border-bottom: var(--main-border);
+    background-color: transparent;
+  }
+  
+.login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+.login-form input:focus {
+    outline: none;
+}
+
+.login-form button{
+  color: white;
+  cursor: pointer;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Yoon</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <form class="login-form hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your naem?"
+      />
+      <button type="submit">Login</button>
+    </form>
+
+    <header class="header hidden">
+      <div class="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="date">
+        <span class="date__clock"></span>
+        <span class="date__today"></span>
+      </div>
+      <div class="user">
+        <span class="user__img"><i class="fas fa-user fa-lg"></i></span>
+        <span class="user__name"> </span>
+      </div>
+    </header>
+
+    <main class="main hidden">
+      <div class="main__col">
+        <div class="main__col__row">
+          <div class="calendar">
+            <img class="calendar__img" src=""/>
+          </div>
+
+          <div class="todo">
+            <form class="todo-form">
+              <input
+                class="todo-form__input"
+                type="text"
+                required
+                placeholder="Write a To Do and Press Enter"
+              />
+            </form>
+            <ul class="todo__list"></ul>
+          </div>
+        </div>
+
+        <div class="main__col__row">
+          <div class="quotes">
+            <span class="quotes__saying"></span>
+            <span class="quotes__author"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__col">
+        <div class="dDay">
+          <form class="dDay-form dDay__box">
+            <input class="dDay-form__date" required type="date" max="9999-12-31" />
+            <input class="dDay-form__title" required type="text" placeholder="Write a D-day title" />
+            <input class="dDay-form__btn" type="submit" value="ADD"></input>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/dDay.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/quotes.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
